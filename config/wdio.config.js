@@ -221,14 +221,14 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
-        if(error){
-            let img = driver.takeScreenshot();
-            require('fs').writeFile('/Users/jytu/Downloads/MobileWorkshop/results/output.png', img , 'base64', function(err){
-                console.log(err);
-            });
-        }
-    },
+    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //     if(error){
+    //         let img = driver.takeScreenshot();
+    //         require('fs').writeFile('/Users/jytu/Downloads/MobileWorkshop/results/output.png', img , 'base64', function(err){
+    //             console.log(err);
+    //         });
+    //     }
+    // },
 
 
 
